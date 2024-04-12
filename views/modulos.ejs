@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selección de Módulos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Selección de Módulos</h1>
+        <hr>
+        <form action="/modulos" method="post">
+            <input type="hidden" name="curso" value="<%= curso %>">
+            <div class="form-group">
+                <label>Seleccione los módulos:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="basico" name="modulos[]" value="Básico">
+                    <label class="form-check-label" for="basico">Básico</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="intermedio" name="modulos[]" value="Intermedio">
+                    <label class="form-check-label" for="intermedio">Intermedio</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="avanzado" name="modulos[]" value="Avanzado">
+                    <label class="form-check-label" for="avanzado">Avanzado</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Siguiente</button>
+        </form>
+    </div>
+</body>
+</html>

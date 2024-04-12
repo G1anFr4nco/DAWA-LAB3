@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selección de Curso</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Selección de Curso</h1>
+        <hr>
+        <form action="/matriculas" method="post">
+            <div class="form-group">
+                <label for="curso">Curso</label>
+                <select class="form-control" id="curso" name="curso" required>
+                    <option value="Java">Java</option>
+                    <option value="PHP">PHP</option>
+                    <option value=".NET">.NET</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Siguiente</button>
+        </form>
+    </div>
+</body>
+</html>
